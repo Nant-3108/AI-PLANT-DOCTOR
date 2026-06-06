@@ -1,0 +1,6 @@
+{
+  "name": "AI Plant Doctor",
+  "description": "Scan plant leaf images to identify disease presence and generate structured organic and chemical treatment plans.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

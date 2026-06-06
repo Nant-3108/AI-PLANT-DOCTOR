@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@utility glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility accent-border {
+  border-color: rgba(74, 222, 128, 0.15);
+}
+
+@utility bg-scan {
+  background: linear-gradient(180deg, transparent 0%, rgba(74, 222, 128, 0.1) 50%, transparent 100%);
+  background-size: 100% 4px;
+}
+
+@utility text-glow {
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
+}
+
+@utility glow-green {
+  box-shadow: 0 0 25px rgba(74, 222, 128, 0.2);
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@utility animate-scan-line {
+  animation: scan 4s linear infinite;
+}
+
+/* Base resets & typography */
+body {
+  background-color: #050505;
+  color: #e5e5e5;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.serif-font {
+  font-family: 'Georgia', serif;
+}
+
+/* Hide default input type file styling */
+input[type="file"]::file-selector-button {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #e5e5e5;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
